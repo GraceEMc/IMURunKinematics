@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<OpenSimDocument Version="40000">
+	<IMUInverseKinematicsTool name="RE_Pre_11TP_1_timepoint1_S1N">
+		<!--Name of the directory where results are written. Be default this is the directory in which the setup file is be  executed.-->
+		<results_directory>R:\research\HealthSciences\Medicine\musculoskeletal_gait\Projects\Grace\RUN_FATIGUE\Data\Session1\IMUData\NI\230627\RE_Pre_11TP_1\timepoint1\OSense</results_directory>
+		<!--Name/path to the xml .osim file.-->
+		<model_file>R:\research\HealthSciences\Medicine\musculoskeletal_gait\Projects\Grace\RUN_FATIGUE\Data\Session1\IMUData\NI\230627\Static\NI_IMU_posedXproductOsense.osim</model_file>
+		<!--The time range for the study.-->
+		<time_range>20.989999999999998 21.704499999999999</time_range>
+		<!--Name of the resulting inverse kinematics motion (.mot) file.-->
+		<output_motion_file>RE_Pre_11TP_1_timepoint1_S1_OsenseN</output_motion_file>
+		<!--Space fixed Euler angles (XYZ order) from IMU Space to OpenSim. Default to (0, 0, 0).-->
+		<sensor_to_opensim_rotations>0 0 0</sensor_to_opensim_rotations>
+		<!--Name/path to a .sto file of sensor frame orientations as quaternions.-->
+		<orientations_file>R:\research\HealthSciences\Medicine\musculoskeletal_gait\Projects\Grace\RUN_FATIGUE\Data\Session1\IMUData\NI\230627\RE_Pre_11TP_1\timepoint1\OSense\RE_Pre_11TP_1_timepoint1_S1_orientations_Quaternions_N.sto</orientations_file>
+		<!--Set of orientation weights identified by orientation name with weight being a positive scalar. If not provided, all IMU orientations are tracked with weight 1.0.-->
+		<OrientationWeightSet name="orientation_weights">
+			<objects>
+				<OrientationWeight name="pelvis_imu_offset">
+					<!--Orientation reference weight.-->
+					<weight>1</weight>
+				</OrientationWeight>
+				<OrientationWeight name="torso_imu_offset">
+					<!--Orientation reference weight.-->
+					<weight>1</weight>
+				</OrientationWeight>
+				<OrientationWeight name="thigh_r_imu_offset">
+					<!--Orientation reference weight.-->
+					<weight>1</weight>
+				</OrientationWeight>
+				<OrientationWeight name="thigh_l_imu_offset">
+					<!--Orientation reference weight.-->
+					<weight>1</weight>
+				</OrientationWeight>
+				<OrientationWeight name="tibia_r_imu_offset_imu">
+					<!--Orientation reference weight.-->
+					<weight>1</weight>
+				</OrientationWeight>
+				<OrientationWeight name="tibia_l_imu_offset">
+					<!--Orientation reference weight.-->
+					<weight>1</weight>
+				</OrientationWeight>
+				<OrientationWeight name="calcn_l_imu_offset">
+					<!--Orientation reference weight.-->
+					<weight>1</weight>
+				</OrientationWeight>
+				<OrientationWeight name="calcn_r_imu_offset">
+					<!--Orientation reference weight.-->
+					<weight>1</weight>
+				</OrientationWeight>
+			</objects>
+			<groups />
+		</OrientationWeightSet>
+	</IMUInverseKinematicsTool>
+</OpenSimDocument>

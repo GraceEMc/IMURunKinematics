@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<OpenSimDocument Version="30000">
+   <InverseKinematicsTool><!--Directory used for writing results.--><!--Directory for input files--><!--Name of the .osim file used to construct a model.--><!--A positive scalar that is used to weight the importance of satisfying constraints.A weighting of 'Infinity' or if it is unassigned results in the constraints being strictly enforced.--><!--The accuracy of the solution in absolute terms. I.e. the number of significantdigits to which the solution can be trusted.--><!--Markers and coordinates to be considered (tasks) and their weightings.--><!--TRC file (.trc) containing the time history of observations of marker positions.--><!--The name of the storage (.sto or .mot) file containing coordinate observations.Coordinate values from this file are included if there is a corresponding coordinate task.--><!--Time range over which the inverse kinematics problem is solved.--><!--Flag (true or false) indicating whether or not to report marker errors from the inverse kinematics solution.--><!--Name of the motion file (.mot) to which the results should be written.--><!--Flag indicating whether or not to report model marker locations in ground.--><results_directory>Y:\Projects\Grace\RUN_FATIGUE\Data\Session1\ProcessedData\NI\230627\dynamicElaborations\NI\RE_Pre_11TP_1\results_folder\InverseKinematics</results_directory>
+      <input_directory>Y:\Projects\Grace\RUN_FATIGUE\Data\Session1\ProcessedData\NI\230627\dynamicElaborations\NI\RE_Pre_11TP_1</input_directory>
+      <model_file>Y:\Projects\Grace\RUN_FATIGUE\Data\Session1\ProcessedData\NI\230627\staticElaborations\NI\model.osim</model_file>
+      <constraint_weight>Inf</constraint_weight>
+      <accuracy>1e-05</accuracy>
+      <IKTaskSet>
+         <objects>
+            <IKMarkerTask name="R_ACROMION"><!--Whether or not this task will be used during inverse kinematics solve.--><!--Weight given to a marker or coordinate for solving inverse kinematics problems.--><apply>true</apply>
+               <weight>0.5</weight>
+            </IKMarkerTask>
+            <IKMarkerTask name="L_ACROMION"><!--Whether or not this task will be used during inverse kinematics solve.--><!--Weight given to a marker or coordinate for solving inverse kinematics problems.--><apply>true</apply>
+               <weight>0.5</weight>
+            </IKMarkerTask>
+            <IKMarkerTask name="R_ASIS"><!--Whether or not this task will be used during inverse kinematics solve.--><!--Weight given to a marker or coordinate for solving inverse kinematics problems.--><apply>true</apply>
+               <weight>20</weight>
+            </IKMarkerTask>
+            <IKMarkerTask name="L_ASIS"><!--Whether or not this task will be used during inverse kinematics solve.--><!--Weight given to a marker or coordinate for solving inverse kinematics problems.--><apply>true</apply>
+               <weight>20</weight>
+            </IKMarkerTask>
+            <IKMarkerTask name="R_LAT_FEM_EPI"><!--Whether or not this task will be used during inverse kinematics solve.--><!--Weight given to a marker or coordinate for solving inverse kinematics problems.--><apply>true</apply>
+               <weight>1</weight>
+            </IKMarkerTask>
+            <IKMarkerTask name="R_MED_FEM_EPI"><!--Whether or not this task will be used during inverse kinematics solve.--><!--Weight given to a marker or coordinate for solving inverse kinematics problems.--><apply>true</apply>
+               <weight>0.4</weight>
+            </IKMarkerTask>
+            <IKMarkerTask name="R_MED_MAL"><!--Whether or not this task will be used during inverse kinematics solve.--><!--Weight given to a marker or coordinate for solving inverse kinematics problems.--><apply>true</apply>
+               <weight>2</weight>
+            </IKMarkerTask>
+            <IKMarkerTask name="R_CALC"><!--Whether or not this task will be used during inverse kinematics solve.--><!--Weight given to a marker or coordinate for solving inverse kinematics problems.--><apply>true</apply>
+               <weight>10</weight>
+            </IKMarkerTask>
+            <IKMarkerTask name="R_5TH"><!--Whether or not this task will be used during inverse kinematics solve.--><!--Weight given to a marker or coordinate for solving inverse kinematics problems.--><apply>true</apply>
+               <weight>5</weight>
+            </IKMarkerTask>
+            <IKMarkerTask name="R_1ST"><!--Whether or not this task will be used during inverse kinematics solve.--><!--Weight given to a marker or coordinate for solving inverse kinematics problems.--><apply>true</apply>
+               <weight>10</weight>
+            </IKMarkerTask>
+            <IKMarkerTask name="L_LAT_FEM_EPI"><!--Whether or not this task will be used during inverse kinematics solve.--><!--Weight given to a marker or coordinate for solving inverse kinematics problems.--><apply>true</apply>
+               <weight>0.7</weight>
+            </IKMarkerTask>
+            <IKMarkerTask name="L_MED_FEM_EPI"><!--Whether or not this task will be used during inverse kinematics solve.--><!--Weight given to a marker or coordinate for solving inverse kinematics problems.--><apply>true</apply>
+               <weight>0.4</weight>
+            </IKMarkerTask>
+            <IKMarkerTask name="L_LAT_MAL"><!--Whether or not this task will be used during inverse kinematics solve.--><!--Weight given to a marker or coordinate for solving inverse kinematics problems.--><apply>true</apply>
+               <weight>2</weight>
+            </IKMarkerTask>
+            <IKMarkerTask name="R_LAT_MAL"><!--Whether or not this task will be used during inverse kinematics solve.--><!--Weight given to a marker or coordinate for solving inverse kinematics problems.--><apply>true</apply>
+               <weight>2</weight>
+            </IKMarkerTask>
+            <IKMarkerTask name="L_CALC"><!--Whether or not this task will be used during inverse kinematics solve.--><!--Weight given to a marker or coordinate for solving inverse kinematics problems.--><apply>true</apply>
+               <weight>10</weight>
+            </IKMarkerTask>
+            <IKMarkerTask name="L_1ST"><!--Whether or not this task will be used during inverse kinematics solve.--><!--Weight given to a marker or coordinate for solving inverse kinematics problems.--><apply>true</apply>
+               <weight>10</weight>
+            </IKMarkerTask>
+            <IKMarkerTask name="R_PSIS"><!--Whether or not this task will be used during inverse kinematics solve.--><!--Weight given to a marker or coordinate for solving inverse kinematics problems.--><apply>true</apply>
+               <weight>20</weight>
+            </IKMarkerTask>
+            <IKMarkerTask name="L_PSIS"><!--Whether or not this task will be used during inverse kinematics solve.--><!--Weight given to a marker or coordinate for solving inverse kinematics problems.--><apply>true</apply>
+               <weight>20</weight>
+            </IKMarkerTask>
+            <IKMarkerTask name="R_GTROC"><!--Whether or not this task will be used during inverse kinematics solve.--><!--Weight given to a marker or coordinate for solving inverse kinematics problems.--><apply>false</apply>
+               <weight>0.2</weight>
+            </IKMarkerTask>
+            <IKMarkerTask name="L_GTROC"><!--Whether or not this task will be used during inverse kinematics solve.--><!--Weight given to a marker or coordinate for solving inverse kinematics problems.--><apply>false</apply>
+               <weight>0.2</weight>
+            </IKMarkerTask>
+            <IKMarkerTask name="R_TH1"><!--Whether or not this task will be used during inverse kinematics solve.--><!--Weight given to a marker or coordinate for solving inverse kinematics problems.--><apply>true</apply>
+               <weight>0.4</weight>
+            </IKMarkerTask>
+            <IKMarkerTask name="R_TH2"><!--Whether or not this task will be used during inverse kinematics solve.--><!--Weight given to a marker or coordinate for solving inverse kinematics problems.--><apply>true</apply>
+               <weight>0.4</weight>
+            </IKMarkerTask>
+            <IKMarkerTask name="R_TH4"><!--Whether or not this task will be used during inverse kinematics solve.--><!--Weight given to a marker or coordinate for solving inverse kinematics problems.--><apply>true</apply>
+               <weight>0.4</weight>
+            </IKMarkerTask>
+            <IKMarkerTask name="R_TH3"><!--Whether or not this task will be used during inverse kinematics solve.--><!--Weight given to a marker or coordinate for solving inverse kinematics problems.--><apply>true</apply>
+               <weight>0.4</weight>
+            </IKMarkerTask>
+            <IKMarkerTask name="R_SH1"><!--Whether or not this task will be used during inverse kinematics solve.--><!--Weight given to a marker or coordinate for solving inverse kinematics problems.--><apply>true</apply>
+               <weight>1</weight>
+            </IKMarkerTask>
+            <IKMarkerTask name="R_SH2"><!--Whether or not this task will be used during inverse kinematics solve.--><!--Weight given to a marker or coordinate for solving inverse kinematics problems.--><apply>true</apply>
+               <weight>1</weight>
+            </IKMarkerTask>
+            <IKMarkerTask name="R_SH3"><!--Whether or not this task will be used during inverse kinematics solve.--><!--Weight given to a marker or coordinate for solving inverse kinematics problems.--><apply>true</apply>
+               <weight>1</weight>
+            </IKMarkerTask>
+            <IKMarkerTask name="R_SH4"><!--Whether or not this task will be used during inverse kinematics solve.--><!--Weight given to a marker or coordinate for solving inverse kinematics problems.--><apply>true</apply>
+               <weight>1</weight>
+            </IKMarkerTask>
+            <IKMarkerTask name="L_TH4"><!--Whether or not this task will be used during inverse kinematics solve.--><!--Weight given to a marker or coordinate for solving inverse kinematics problems.--><apply>true</apply>
+               <weight>0.4</weight>
+            </IKMarkerTask>
+            <IKMarkerTask name="L_TH1"><!--Whether or not this task will be used during inverse kinematics solve.--><!--Weight given to a marker or coordinate for solving inverse kinematics problems.--><apply>true</apply>
+               <weight>0.4</weight>
+            </IKMarkerTask>
+            <IKMarkerTask name="L_TH2"><!--Whether or not this task will be used during inverse kinematics solve.--><!--Weight given to a marker or coordinate for solving inverse kinematics problems.--><apply>true</apply>
+               <weight>0.4</weight>
+            </IKMarkerTask>
+            <IKMarkerTask name="L_TH3"><!--Whether or not this task will be used during inverse kinematics solve.--><!--Weight given to a marker or coordinate for solving inverse kinematics problems.--><apply>true</apply>
+               <weight>0.4</weight>
+            </IKMarkerTask>
+            <IKMarkerTask name="L_SH1"><!--Whether or not this task will be used during inverse kinematics solve.--><!--Weight given to a marker or coordinate for solving inverse kinematics problems.--><apply>true</apply>
+               <weight>1</weight>
+            </IKMarkerTask>
+            <IKMarkerTask name="L_SH2"><!--Whether or not this task will be used during inverse kinematics solve.--><!--Weight given to a marker or coordinate for solving inverse kinematics problems.--><apply>true</apply>
+               <weight>1</weight>
+            </IKMarkerTask>
+            <IKMarkerTask name="L_SH4"><!--Whether or not this task will be used during inverse kinematics solve.--><!--Weight given to a marker or coordinate for solving inverse kinematics problems.--><apply>true</apply>
+               <weight>1</weight>
+            </IKMarkerTask>
+            <IKMarkerTask name="L_SH3"><!--Whether or not this task will be used during inverse kinematics solve.--><!--Weight given to a marker or coordinate for solving inverse kinematics problems.--><apply>true</apply>
+               <weight>1</weight>
+            </IKMarkerTask>
+            <IKMarkerTask name="R_DORSAL"><!--Whether or not this task will be used during inverse kinematics solve.--><!--Weight given to a marker or coordinate for solving inverse kinematics problems.--><apply>true</apply>
+               <weight>0.4</weight>
+            </IKMarkerTask>
+            <IKMarkerTask name="L_DORSAL"><!--Whether or not this task will be used during inverse kinematics solve.--><!--Weight given to a marker or coordinate for solving inverse kinematics problems.--><apply>true</apply>
+               <weight>0.4</weight>
+            </IKMarkerTask>
+            <IKMarkerTask name="C7"><!--Whether or not this task will be used during inverse kinematics solve.--><!--Weight given to a marker or coordinate for solving inverse kinematics problems.--><apply>true</apply>
+               <weight>0.6</weight>
+            </IKMarkerTask>
+            <IKMarkerTask name="ST_NOTCH"><!--Whether or not this task will be used during inverse kinematics solve.--><!--Weight given to a marker or coordinate for solving inverse kinematics problems.--><apply>true</apply>
+               <weight>0.6</weight>
+            </IKMarkerTask>
+            <IKMarkerTask name="L_5TH"><!--Whether or not this task will be used during inverse kinematics solve.--><!--Weight given to a marker or coordinate for solving inverse kinematics problems.--><apply>true</apply>
+               <weight>2</weight>
+            </IKMarkerTask>
+            <IKMarkerTask name="L_MED_MAL"><!--Whether or not this task will be used during inverse kinematics solve.--><!--Weight given to a marker or coordinate for solving inverse kinematics problems.--><apply>true</apply>
+               <weight>2</weight>
+            </IKMarkerTask>
+            <IKMarkerTask name="S1"><!--Whether or not this task will be used during inverse kinematics solve.--><!--Weight given to a marker or coordinate for solving inverse kinematics problems.--><apply>true</apply>
+               <weight>6</weight>
+            </IKMarkerTask>
+            <IKMarkerTask name="S4"><!--Whether or not this task will be used during inverse kinematics solve.--><!--Weight given to a marker or coordinate for solving inverse kinematics problems.--><apply>true</apply>
+               <weight>6</weight>
+            </IKMarkerTask>
+            <IKMarkerTask name="S3"><!--Whether or not this task will be used during inverse kinematics solve.--><!--Weight given to a marker or coordinate for solving inverse kinematics problems.--><apply>true</apply>
+               <weight>6</weight>
+            </IKMarkerTask>
+            <IKMarkerTask name="S2"><!--Whether or not this task will be used during inverse kinematics solve.--><!--Weight given to a marker or coordinate for solving inverse kinematics problems.--><apply>true</apply>
+               <weight>6</weight>
+            </IKMarkerTask>
+         </objects>
+      </IKTaskSet>
+      <marker_file>Y:\Projects\Grace\RUN_FATIGUE\Data\Session1\ProcessedData\NI\230627\dynamicElaborations\NI\RE_Pre_11TP_1\RE_Pre_11TP_1.trc</marker_file>
+      <coordinate_file>Unassigned</coordinate_file>
+      <time_range>91.2475 94.8485</time_range>
+      <report_errors>true</report_errors>
+      <output_motion_file>RE_Pre_11TP_1_sp2_IK.mot</output_motion_file>
+      <report_marker_locations>false</report_marker_locations>
+   </InverseKinematicsTool>
+</OpenSimDocument>
